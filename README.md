@@ -16,7 +16,7 @@ I am having problems writing the code on SOFA Framework, in particular:
 1 cut
 binding the entire posterior part of the liver.'''
 
-# Required import for python
+# Pythone Code
 import Sofa
 import numpy as np
 from scipy import sparse
@@ -24,8 +24,6 @@ from scipy import linalg
 import numpy as np
 from matplotlib import pyplot as plt
 
-
-# Choose in your script to activate or not the GUI
 USE_GUI = True
 exportCSV = True
 showImage = False
@@ -139,6 +137,5 @@ class MatrixAccessController(Sofa.Core.Controller):
             plt.imshow(stiffness_matrix.toarray(), interpolation='nearest', cmap='gist_gray')
             plt.show(block=False)
 
-# Function used only if this script is called from a python environment
 if __name__ == '__main__':
     main()
